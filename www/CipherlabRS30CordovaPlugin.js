@@ -40,17 +40,22 @@ var CipherlabRS30CordovaPlugin = function (require, exports, module) {
             cordova.exec(callback, function (err) {
             }, "CipherlabRS30CordovaPlugin", "destroy", []);
         }
-		
+
+        this.toggleScan = function (callback){
+            cordova.exec(callback, function (err) {
+            }, "CipherlabRS30CordovaPlugin", "toggleScan", []);
+        }
+
 		this.setReceiveScanCallback = function (callback) {
 			cordova.exec(callback, function (err) {
 			}, "CipherlabRS30CordovaPlugin", "setReceiveScanCallback", []);
 		}
-		
+
 		this.requestScan = function(callback) {
 			cordova.exec(callback, function (err) {
 			}, "CipherlabRS30CordovaPlugin", "requestScan", []);
         }
-        
+
         this.setEnableBinaryData = function(enable, callback) {
             cordova.exec(callback, function (err) {
 			}, "CipherlabRS30CordovaPlugin", "setEnableBinaryData", [enable]);
