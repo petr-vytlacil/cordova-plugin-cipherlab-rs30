@@ -141,6 +141,8 @@ public class CipherlabRS30Plugin extends CordovaPlugin {
 				}
 				Log.v("CipherlabRS30Plugin", "toggleScan :" + !bRet);
 			}
+
+			return true;
 		}
 
 		if (action.equals("setEnableBinaryData"))
