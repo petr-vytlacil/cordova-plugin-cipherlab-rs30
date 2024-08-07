@@ -46,6 +46,16 @@ var CipherlabRS30CordovaPlugin = function (require, exports, module) {
             }, "CipherlabRS30CordovaPlugin", "toggleScan", []);
         }
 
+        this.disableScan = function (callback){
+            cordova.exec(callback, function (err) {
+            }, "CipherlabRS30CordovaPlugin", "disableScan", []);
+        }
+
+        this.enableScan = function (callback){
+            cordova.exec(callback, function (err) {
+            }, "CipherlabRS30CordovaPlugin", "enableScan", []);
+        }
+
 		this.setReceiveScanCallback = function (callback) {
 			cordova.exec(callback, function (err) {
 			}, "CipherlabRS30CordovaPlugin", "setReceiveScanCallback", []);
